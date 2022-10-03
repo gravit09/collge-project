@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Block-chain first class</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!-- 
+Easy Profile Template
+http://www.templatemo.com/tm-467-easy-profile
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/templatemo-blue.css">
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-wordpress">
+       <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<img src="data:image/jpeg;base64,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" class="img-responsive img-circle tm-border profile-img" alt="templatemo easy profile">
+				<hr>
+				<h1 class="tm-title bold shadow">Hi, I am Gravit</h1>
+				<h1 class="white bold shadow">C.S.E Student</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- about and skills section -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<div class="about">
+				<h3 class="accent">Easy Profile</h3>
+				<h2>Bootstrap v3.3.5</h2>
+				<p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="skills">
+				<h2 class="white">Skills</h2>
+				<strong>HTML,CSS</strong>
+				<span class="pull-right">90%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+				<strong>javascript</strong>
+				<span class="pull-right">85%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+					</div>
+				<strong>Bootstrap</strong>
+				<span class="pull-right">95%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+					</div>
+					<strong>React</strong>
+				<span class="pull-right">50%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- education and languages -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8 col-sm-12">
+			<div class="education">
+				<h2 class="white">Education</h2>
+					<div class="education-content">
+						<h4 class="education-title accent">New Web Design</h4>
+							<div class="education-school">
+								<h5>G.L.A Mathura</h5><span></span>
+								<h5>2022 oct - 2026 june</h5>
+							</div>
+						<p class="education-description">I am student of computer science and have blockchain as speciliaztion and i want to be a part of web3.0 industry nad i have skill set of web 2.0 tech like html,css,javascript and React.</p>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="languages">
+				<h2>Languages</h2>
+					<ul>
+						<li>English / Hindi</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- contact and experience -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="contact">
+				<h2>Contact</h2>
+					<p><i class="fa fa-map-marker"></i> 247667 Roorkee</p>
+					<p><i class="fa fa-phone"></i> 7668507139</p>
+					<p><i class="fa fa-envelope"></i> garvitchoudhery@gmail.com</p>
+					<p><i class="fa fa-globe"></i> www.garvit.com</p>
+			</div>
+		</div>
+		<div class="col-md-8 col-sm-12">
+			<div class="experience">
+				<h2 class="white">Experiences</h2>
+					<div class="experience-content">
+						<h4 class="experience-title accent">Website Development</h4>
+						<h5>Garvit's Company</h5><span></span>
+						<h5>2022 January - 2026 April</h5>
+						<p class="education-description">Main aim of Gravit's company is to build web3.0 products and provide users best privacy and best available alternative to big data.</p>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright &copy; 2084 Your Easy Profile</p>
+				<ul class="social-icons">
+					<li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://myaccount.google.com/" class="fa fa-google-plus"></a></li>
+					<li><a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a></li>
+					<li><a href="https://dribbble.com/" class="fa fa-dribbble"></a></li>
+					<li><a href="https://github.com/" class="fa fa-github"></a></li>
+					<li><a href="https://www.behance.net/joblist?sdid=V6NZKQSK&mv=search" class="fa fa-behance"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- javascript js -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
